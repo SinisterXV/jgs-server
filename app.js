@@ -7,7 +7,7 @@ const app = express();
 const port = 3000;
 
 const __dirname = path.resolve();
-const desktopPath = path.join(__dirname, "..");
+const desktopPath = "C:\\Users\\jgsil\\Desktop";
 
 const networkInterfaces = os.networkInterfaces();
 let hostIp;
