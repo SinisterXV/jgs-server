@@ -53,6 +53,6 @@ app.get("/desktop/:filename", (req, res) => {
 	try {
 		res.download(path.join(desktopPath, req.params.filename));
 	} catch (err) {
-		return res.status(500).json({ error: err });
+		return res.status(500).json({ error: err.message });
 	}
 });
