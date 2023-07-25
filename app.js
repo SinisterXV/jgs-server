@@ -22,7 +22,7 @@ if (networkInterfaces["WiFi"]) {
 app.use(express.static(__dirname + "/homepage"));
 
 app.listen(port, () => {
-	console.log(`Application running on port ${port} \nIP address: ${hostIp}`);
+	console.log(`Server's address: ${hostIp}:${port}`);
 });
 
 app.get("/", (req, res) => {
